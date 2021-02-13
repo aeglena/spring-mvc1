@@ -21,7 +21,7 @@ public class CarController {
         cars.add(new Car("Brand3", "Model3", 3));
         cars.add(new Car("Brand4", "Model4", 4));
         cars.add(new Car("Brand5", "Model5", 5));
-        if ((count >= 5) || (count == null) || (count < 0)) {
+        if ((count >= 5) || (count < 0)) {
             count = 5;
         }
         List<Car> list = cars.stream().limit(count).collect(Collectors.toList());
